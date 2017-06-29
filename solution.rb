@@ -1,6 +1,6 @@
 require "sinatra"
 
-get "/" do
+get "/makers/juan" do
 	# nombre = params["nombre"]
 	# if !nombre
 	# 	"Hola desconocido!"
