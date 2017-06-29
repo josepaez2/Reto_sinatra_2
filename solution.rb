@@ -1,12 +1,16 @@
 require "sinatra"
 
 get "/makers/juan" do
-	# nombre = params["nombre"]
+  path = request.path_info
+  path = path[8..16]
+  path = path.capitalize
 	# if !nombre
 	# 	"Hola desconocido!"
 	# else
 	#  "Hola #{nombre}!"
 	# end	
-	"Hola Juan!"
+	"Hola #{path}!"
 end
 
+# # LINK DEMASIADO ÜTIL
+# http://www.sinatrarb.com/faq.html#path_info
